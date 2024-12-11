@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="400dp" >
+
+                <ImageView
+                    android:id="@+id/imageView23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/top_wave" />
+
+                <ImageView
+                    android:id="@+id/btnBack"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="32dp"
+                    android:padding="12dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/back" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imageView25"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:scaleType="centerCrop"
+                    app:shapeAppearanceOverlay="@style/CircleImageView"
+                    android:padding="5dp"
+                    app:strokeColor="@color/white"
+                    app:strokeWidth="5dp"
+                    android:elevation="3dp"
+                    app:layout_constraintBottom_toBottomOf="@id/imageView23"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/imageView23"
+                    tools:srcCompat="@drawable/img" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="24dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/btnEditProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/orange_mid_bg"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        app:srcCompat="@drawable/edit_profile" />
+
+                    <TextView
+                        android:id="@+id/textView27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="16dp"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:text="Edit Profile" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btnMyFavorite"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/orange_mid_bg"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        app:srcCompat="@drawable/favorite" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="16dp"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:text="My Favorite" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btnNotification"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/orange_mid_bg"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        app:srcCompat="@drawable/notification" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="16dp"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:text="Notifications" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btnMyOrder"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/orange_mid_bg"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        app:srcCompat="@drawable/order" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="16dp"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:text="My Order" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btnLogOut"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/orange_mid_bg"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        app:srcCompat="@drawable/exit" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="16dp"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:text="Log Out" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
